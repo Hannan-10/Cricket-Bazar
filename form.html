@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricketer Price Predictor</title>
+    <link rel="stylesheet" href="formcss.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/cricket.png" alt="Cricket Icon" class="logo-img" width="20px" height="20px">
+            <h1 class="title">Auction Price Predictor</h1>
+        </div>
+
+        <form id="predictForm" class="predict-form">
+            <h2 class="form-title">Enter Player Details</h2>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter player's country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="form">Form (1 to 10):</label>
+                <input type="number" id="form" name="form" placeholder="Enter player's current form (1 to 10)" required min="1" max="10">
+            </div>
+
+            <div class="form-group">
+                <label for="playedInIpl2022">Played in IPL 2022 (Yes=1/No=0):</label>
+                <input type="number" id="playedInIpl2022" name="playedInIpl2022" placeholder="1/0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reservePrice">Reserve Price (in Lacs):</label>
+                <input type="number" id="reservePrice" name="reservePrice" placeholder="Enter reserve price in Lacs" required>
+            </div>
+
+            <div class="form-group">
+                <label for="playedInIpl">Total Matches Played in IPL:</label>
+                <input type="number" id="playedInIpl" name="playedInIpl" placeholder="No. of matches" required>
+            </div>
+
+            <div class="form-group">
+                <label for="t20Cap">T20 Cap:</label>
+                <input type="number" id="t20Cap" name="t20Cap" placeholder="No. of T20 matches played" required>
+            </div>
+
+            <div class="form-group">
+                <label for="odiCap">ODI Cap:</label>
+                <input type="number" id="odiCap" name="odiCap" placeholder="No. of ODI matches played" required>
+            </div>
+
+            <button type="button" onclick="predictPrice()">Predict Auction Price</button>
+        </form>
+
+        <div id="result" class="result">
+            <h2>Predicted Auction Price</h2>
+            <p id="predictedPrice">---</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

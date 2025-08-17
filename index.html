@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Predictor</title>
+    <link rel="stylesheet" href="ipl.css">
+    <style>
+        *{
+         font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- <img src="images/data-science.png" alt="Logo" class="logo-img"> -->
+            <h1 class="logo-text">Auction Price Predictor</h1>
+        </div>
+
+
+
+        <!-- this is for background logo -->
+        <div class="background">
+            <img src="images/csblogo.png" id="logobg" alt="">
+        </div>
+
+        <div class="heading">
+            <h1 id="head">
+                Royal Challengers Bangalore
+            </h1>
+
+            <p style="font-weight: 500;">
+                Welcome to Cricketer Price Predictor, the ultimate tool to estimate the auction price of cricket players! Whether you're a cricket enthusiast, a fantasy league player, or a sports analyst, our platform leverages advanced machine learning algorithms to provide accurate predictions based on player performance metrics and trends.
+            </p>
+
+            <button onclick="window.location.href='form.html';">Auction Price Predictor</button>
+
+        </div>
+
+        <!-- this is for main image -->
+
+        <div class="image">
+            <img id="myimage" src="images/rcb-removebg-preview.png" alt="">
+        </div>
+
+
+
+
+        <!-- now navbar -->
+
+        <!-- <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Team</li>
+                <li>Performance</li>
+                <li>Rank</li>
+            </ul>
+        </div> -->
+
+
+
+        <div class="empty">
+
+
+        </div>
+
+    
+        <div class="list">
+            <ol>
+                <li onclick="myFun('images/css3.png', 'gold', 'Chennai Super Kings', 'images/csk3.png')">CSK</li>
+
+
+                <li onclick="myFun('images/dd1.png', 'lightblue', 'Delhi Capitals', 'images/ddlogo.png')">DC</li>
+                <li onclick="myFun('images/mi.png', 'dodgerblue', 'Mumbai Indians', 'images/milogo.png')">MI</li>
+                <li onclick="myFun('images/srh.png', 'orangered', 'Sun Raise Hydrabad', 'images/srhlogo.png')">SRH</li>
+                <li onclick="myFun('images/kp.png', 'red', 'King XI Punjab', 'images/kplogo.png')">KXIP</li>
+                <li onclick="myFun('images/rr1.png', '#ff3385', 'Rajastan Royals', 'images/rrlogo.png')">RR</li>
+                <li onclick="myFun('images/kkr.png', 'purple', 'Kolkata Knight Riders', 'images/kkrlogo.png')">KKR</li>
+            </ol>
+        </div>
+
+    </div>
+
+
+
+
+
+
+<script>
+
+    function myFun(image, colour, head, logo){
+        document.getElementById('myimage').src=image;
+        document.querySelector('.empty').style.backgroundColor=colour;
+        document.querySelector('button').style.backgroundColor=colour;
+        document.getElementById('head').innerHTML=head;
+        document.getElementById('logobg').src=logo;
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #007acc, #00cc88);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+}
+
+.title {
+    font-size: 24px;
+    color: #007acc;
+    margin: 0;
+}
+
+/* Form Styles */
+.predict-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-title {
+    font-size: 20px;
+    color: #00cc88;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    width: 150px; /* Adjust width to align the labels with inputs */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    flex-grow: 1; /* Allow input to fill available space */
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #007acc;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+button {
+    background: #007acc;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+/* Result Styles */
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#predictedPrice {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00cc88;
+}
