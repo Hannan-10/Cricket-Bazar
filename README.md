@@ -1,6 +1,6 @@
 # 🏏 Cricket Bazaar - Cricket Analytics Platform
 
-![Cricket Bazaar](./ds.png)
+![Cricket Bazaar](./DS.png)
 
 ## 📌 Overview  
 Cricket Bazaar is a **Cricket Analytics Platform** designed to analyze and predict **IPL auction prices** using advanced **regression and classification models** trained on historical player data.  
